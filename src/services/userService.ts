@@ -7,3 +7,7 @@ export const create = (user: IUser): IUser => {
   users.push(user);
   return user;
 };
+
+export const findAll = (): IUser[] => {
+  return users;
+};
