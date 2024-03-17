@@ -6,3 +6,8 @@ export const createUser = (req: Request, res: Response) => {
   const user = userService.create(req.body);
   res.status(201).send(user);
 };
+
+export const getAllUsers = (req: Request, res: Response) => {
+  const users = userService.findAll();
+  res.status(200).send(users);
+};
